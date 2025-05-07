@@ -1,0 +1,15 @@
+{
+  "name": "my-cv-project",
+  "version": "1.0.0",
+  "description": "my cv project to improve my skills in development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.87.0"
+  }
+}
