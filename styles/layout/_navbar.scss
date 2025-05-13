@@ -5,17 +5,51 @@
 .nav {
 	position: fixed;
 	width: 100%;
+	z-index: 5;
 	top: 0;
 	left: 0;
-	z-index: 5;
 	padding: 1rem 0;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.6);
+	color: $text-dark-color;
+	height: 5rem;
 
 	&__wrapper {
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
-		font-family: $main-font;
-		color: red;
+		padding: 0 1rem;
+		align-items: center;
+		font-family: $secondary-font;
+	}
+
+	&__left-header a {
 		text-decoration: none;
+		color: inherit;
+	}
+
+	&__left-header h1 {
+		font-size: $h3-font-size;
+		font-weight: 100;
+	}
+
+	&__left-header a:hover {
+		cursor: pointer;
+		color: $tertiary-color;
+	}
+
+	&_right-header {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.nav__menu {
+		display: flex;
+		gap: 1rem;
+		font-size: $p-font-size;
+	}
+
+	.nav__menu-item:hover {
+		cursor: pointer;
+		color: $tertiary-color;
 	}
 }
