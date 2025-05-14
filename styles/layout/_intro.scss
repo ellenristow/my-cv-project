@@ -2,13 +2,14 @@
 @use '../components/' as *;
 @use '../core/' as *;
 
-.about {
-	margin-top: 7rem;
+.intro {
+	margin-top: 6rem;
 
 	&__wrapper {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(3, 1fr);
+		grid-template-rows: 4fr 5fr 4fr;
+		position: relative;
 	}
 
 	&__background1 {
@@ -16,7 +17,7 @@
 		grid-column: 1/4;
 		grid-row: 1/4;
 		z-index: -1;
-		margin: 4rem 0;
+		margin: 5rem 0;
 	}
 
 	&__profile {
@@ -27,7 +28,11 @@
 	}
 
 	&__details {
-		padding-left: 10rem;
+		/* padding-left: 10rem; */
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: center;
 	}
 
 	&__text {
@@ -49,19 +54,28 @@
 		justify-content: flex-end;
 		margin-bottom: 1rem;
 		font-size: $small-font-size;
+
+		p {
+			padding: 0.1rem 0;
+		}
+
+		span {
+			font-weight: 700;
+		}
 	}
 
-	&_full {
+	&__full {
+		display: flex;
 		a {
-			text-decoration: none;
 			color: inherit;
+			font-size: $small-font-size;
 		}
 	}
 
 	&__image {
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		justify-content: left;
+		/* align-items: center; */
 		grid-column: 3/4;
 		grid-row: 2/3;
 		align-items: center;
@@ -78,5 +92,6 @@
 		grid-column: 2/5;
 		grid-row: 1/4;
 		z-index: -5;
+		margin-left: 2rem;
 	}
 }
