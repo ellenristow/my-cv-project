@@ -4,4 +4,96 @@
 
 .experience {
 	margin-top: 6rem;
+
+	&__wrapper {
+		font-family: $main-font;
+		color: $text-dark-color;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, auto);
+	}
+
+	&__background1 {
+		grid-column: 1/4;
+		grid-row: 1/4;
+		background: $fourth-color;
+		z-index: -3;
+		margin: 0 8rem 6rem 0;
+	}
+
+	&__text1 {
+		grid-column: 3/5;
+		grid-row: 2/5;
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 2.5rem 4rem 1.5rem 1rem;
+		align-self: center;
+		margin: 1rem 0;
+	}
+
+	&__text2 {
+		grid-column: 1/3;
+		grid-row: 1/3;
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 2.5rem 4rem 1.5rem 1.5rem;
+		margin: 1rem 1rem 0 1.5rem;
+		align-self: start;
+	}
+
+	&__text-section1,
+	&__text-section2 {
+		padding-bottom: 1rem;
+
+		h3 {
+			font-size: $h6-font-size;
+		}
+
+		h4 {
+			font-size: $h5-font-size;
+		}
+
+		h5 {
+			font-size: $h6-font-size;
+		}
+
+		h6 {
+			font-size: $small-font-size;
+			text-transform: uppercase;
+			/* font-weight: 400; */
+		}
+
+		span {
+			font-size: $mini-font-size;
+			text-transform: uppercase;
+		}
+	}
+
+	&__text-section1 {
+		h6 {
+			color: $tertiary-color;
+		}
+
+		span {
+			color: $tertiary-color;
+		}
+	}
+
+	&__text-section2 {
+		h6 {
+			color: $bg-secondary-color;
+		}
+
+		span {
+			color: $bg-secondary-color;
+		}
+	}
+
+	&__background2 {
+		grid-column: 2/5;
+		grid-row: 2/5;
+		background: $bg-primary-color;
+		z-index: -2;
+		margin-left: 17rem;
+	}
 }
