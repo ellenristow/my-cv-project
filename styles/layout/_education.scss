@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../core/' as *;
+
+.education {
+	margin-top: 1rem;
+
+	&__wrapper {
+		font-family: $main-font;
+		color: $text-dark-color;
+	}
+}

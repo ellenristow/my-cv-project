@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"institution_name": "Universidade do Vale do Itajaí",
+		"title": "Bachelor's Degree in Architecture and Urban Planning",
+		"year": "February 2008 - August 2014, Brazil"
+	},
+	{
+		"id": 2,
+		"institution_name": "Faculdade de Arquitetura da Universidade Técnica de Lisboa",
+		"title": "Exchange Program",
+		"year": "September 2012 - June 2013, Portugal"
+	},
+	{
+		"id": 3,
+		"institution_name": "FLAG",
+		"title": "Full Stack Web Development Course",
+		"year": "September 2023 - November 2024, Portugal"
+	}
+]

@@ -9,7 +9,9 @@
 	top: 0;
 	left: 0;
 	color: $text-dark-color;
-	height: 6rem;
+	height: 7rem;
+	background: antiquewhite;
+	align-items: center;
 
 	&__wrapper {
 		display: flex;
@@ -19,7 +21,7 @@
 		font-family: $secondary-font;
 	}
 
-	&__left-header a {
+	&__left-header li {
 		text-decoration: none;
 		color: inherit;
 	}
@@ -27,10 +29,12 @@
 	&__left-header h1 {
 		font-size: $h3-font-size;
 		font-weight: 100;
+		line-height: 1;
 		margin-top: 0.25rem;
+		text-decoration: none;
 	}
 
-	&__left-header a:hover {
+	&__left-header li:hover {
 		cursor: pointer;
 		color: $tertiary-color;
 	}
@@ -54,5 +58,9 @@
 	.nav__menu-item:hover {
 		cursor: pointer;
 		color: $tertiary-color;
+	}
+
+	.nav.navbar-background {
+		background: black;
 	}
 }
