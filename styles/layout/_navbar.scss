@@ -7,11 +7,11 @@
 	width: 100%;
 	z-index: 5;
 	top: 0;
-	left: 0;
+	/* left: 0; */
 	color: $text-dark-color;
 	height: 7rem;
-	background: antiquewhite;
-	align-items: center;
+	/* background: antiquewhite; */
+	/* align-items: center; */
 
 	&__wrapper {
 		display: flex;
@@ -19,11 +19,7 @@
 		justify-content: space-between;
 		align-items: center;
 		font-family: $secondary-font;
-	}
-
-	&__left-header li {
-		text-decoration: none;
-		color: inherit;
+		margin-top: 0.85rem;
 	}
 
 	&__left-header h1 {
@@ -32,9 +28,15 @@
 		line-height: 1;
 		margin-top: 0.25rem;
 		text-decoration: none;
+		text-decoration: none;
+		color: $text-dark-color;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100px;
+		line-height: 1.2;
 	}
 
-	&__left-header li:hover {
+	&__left-header h1:hover {
 		cursor: pointer;
 		color: $tertiary-color;
 	}
@@ -59,8 +61,8 @@
 		cursor: pointer;
 		color: $tertiary-color;
 	}
+}
 
-	.nav.navbar-background {
-		background: black;
-	}
+.navbar-background {
+	background: #fff;
 }

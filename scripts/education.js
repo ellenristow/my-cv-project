@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			institutions.forEach(institution => {
 				const itemDiv = document.createElement('div');
-				itemDiv.classList.add('education___item');
+				itemDiv.classList.add('education__item');
 				itemDiv.setAttribute('education__item-id', institution.id);
 
 				const institutionName = document.createElement('h3');

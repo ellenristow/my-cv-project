@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -40,11 +44,11 @@ main {
   width: 100%;
   z-index: 5;
   top: 0;
-  left: 0;
+  /* left: 0; */
   color: #3d405b;
   height: 7rem;
-  background: antiquewhite;
-  align-items: center;
+  /* background: antiquewhite; */
+  /* align-items: center; */
 }
 .nav__wrapper {
   display: flex;
@@ -52,10 +56,7 @@ main {
   justify-content: space-between;
   align-items: center;
   font-family: "Libre Baskerville", serif;
-}
-.nav__left-header li {
-  text-decoration: none;
-  color: inherit;
+  margin-top: 0.85rem;
 }
 .nav__left-header h1 {
   font-size: 2.074rem;
@@ -63,8 +64,14 @@ main {
   line-height: 1;
   margin-top: 0.25rem;
   text-decoration: none;
+  text-decoration: none;
+  color: #3d405b;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  line-height: 1.2;
 }
-.nav__left-header li:hover {
+.nav__left-header h1:hover {
   cursor: pointer;
   color: #e07a5f;
 }
@@ -85,8 +92,9 @@ main {
   cursor: pointer;
   color: #e07a5f;
 }
-.nav .nav.navbar-background {
-  background: black;
+
+.navbar-background {
+  background: #fff;
 }
 
 .experience {
@@ -105,7 +113,7 @@ main {
   background: #81b29a;
   z-index: -3;
   margin-right: 9rem;
-  margin-bottom: -2rem;
+  margin-bottom: 7rem;
 }
 .experience__text1 {
   grid-column: 3/5;
@@ -127,6 +135,7 @@ main {
 }
 .experience__text-section1, .experience__text-section2 {
   padding-bottom: 1.5rem;
+  padding-top: 1rem;
 }
 .experience__text-section1 h3, .experience__text-section2 h3 {
   font-size: 1.2rem;
@@ -163,11 +172,11 @@ main {
   grid-row: 1/4;
   background: #f2cc8f;
   z-index: -2;
-  margin: 14rem 0 8rem 17rem;
+  margin: 8rem 0 8rem 17rem;
 }
 
 .intro {
-  margin-top: 1rem;
+  margin-top: 7rem;
 }
 .intro__wrapper {
   display: grid;
@@ -300,9 +309,38 @@ main {
 }
 
 .education {
-  margin-top: 1rem;
+  margin-top: 7rem;
 }
 .education__wrapper {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #3d405b;
+}
+.education__background1 {
+  background: #ebdcc5;
+  z-index: -1;
+  position: absolute;
+  inset: 7rem 8rem 2rem 2rem;
+}
+.education__text {
+  display: flex;
+  padding: 4rem;
+}
+.education__item {
+  padding-bottom: 1.5rem;
+  line-height: 1.3;
+}
+.education__item h3 {
+  font-size: 1.2rem;
+}
+.education__item h4 {
+  font-size: 1.44rem;
+}
+.education__item h5 {
+  font-size: 1.2rem;
+}
+.education__item h6 {
+  font-size: 0.833rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #e07a5f;
 }
