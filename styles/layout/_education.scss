@@ -14,12 +14,11 @@
 		background: $bg-secondary-color;
 		z-index: -1;
 		position: absolute;
-		inset: 7rem 8rem 2rem 2rem;
+		inset: 7rem 8rem 8rem 2rem;
 	}
 
 	&__text {
-		display: flex;
-		padding: 4rem;
+		padding: 6.5rem 4rem;
 	}
 
 	&__item {
@@ -44,5 +43,12 @@
 			font-weight: 400;
 			color: $tertiary-color;
 		}
+	}
+
+	&__background2 {
+		background: $bg-primary-color;
+		z-index: -2;
+		position: absolute;
+		inset: 10rem 2rem 2rem 10rem;
 	}
 }

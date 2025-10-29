@@ -319,11 +319,10 @@ main {
   background: #ebdcc5;
   z-index: -1;
   position: absolute;
-  inset: 7rem 8rem 2rem 2rem;
+  inset: 7rem 8rem 8rem 2rem;
 }
 .education__text {
-  display: flex;
-  padding: 4rem;
+  padding: 6.5rem 4rem;
 }
 .education__item {
   padding-bottom: 1.5rem;
@@ -343,4 +342,10 @@ main {
   text-transform: uppercase;
   font-weight: 400;
   color: #e07a5f;
+}
+.education__background2 {
+  background: #f2cc8f;
+  z-index: -2;
+  position: absolute;
+  inset: 10rem 2rem 2rem 10rem;
 }
