@@ -3,75 +3,90 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ellen Ristow CV</title>
+		<title>Ellen Ristow</title>
 		<link rel="stylesheet" href="styles/main.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<div id="navbar-placeholder"></div>
-			<script src="scripts/navbar.js" defer></script>
-		</header>
-		<section class="intro">
-			<div class="container">
-				<div class="intro__wrapper">
-					<div class="intro__background1"></div>
-					<div class="intro__profile">
-						<div class="intro__details">
-							<div class="intro__text">
-								<h2>Ellen Dalago Ristow</h2>
-								<h3>Begginer Web Developer</h3>
-							</div>
-							<div class="intro__data">
-								<p><span class="intro__bold">Phone: </span>(+351) 914 541 698</p>
-								<p><span class="intro__bold">Email: </span>ellenristow@gmail.com</p>
-								<p><span class="intro__bold">Adress: </span>Almada, Portugal</p>
-							</div>
-							<div class="intro__full">
-								<p class="intro__btn"><a href="/assets/cv_ellen-ristow.pdf">Download CV &darr;</a></p>
-							</div>
+			<nav class="nav">
+				<div class="container">
+					<div class="nav__wrapper">
+						<div class="nav__left-header">
+							<ul class="nav__menu">
+								<li class="nav__menu-item">
+									<a href="#">about</a>
+								</li>
+								<li class="nav__menu-item">
+									<a href="/pages/teste.html">skills</a>
+								</li>
+								<li class="nav__menu-item">
+									<a href="#">contact</a>
+								</li>
+							</ul>
+						</div>
+						<div class="nav__right-header">
+							<ul class="nav__menu">
+								<li class="nav__menu-item">
+									<a href="#">linkedin</a>
+								</li>
+								<li class="nav__menu-item">
+									<a href="#">github</a>
+								</li>
+								<li class="nav__menu-item">
+									<a href="/assets/cv_ellen-ristow.pdf">resume</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="intro__image">
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<section class="hero">
+				<div class="hero__cursor"></div>
+				<div class="hero__shapes">
+					<div class="shape shape-1"></div>
+					<div class="shape shape-2"></div>
+					<div class="shape shape-3"></div>
+				</div>
+				<div class="hero__text">
+					<h1>Ellen Ristow</h1>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__wrapper">
+					<div class="about__title">
+						<h2>About Me</h2>
+					</div>
+					<div class="about__image">
 						<img class="img-fluid" src="/images/ellenristow.JPG" alt="self-portrait" />
 					</div>
-					<div class="intro__background2"></div>
-				</div>
-			</div>
-		</section>
-		<section class="experience">
-			<div class="container">
-				<div class="experience__wrapper">
-					<div class="experience__background1"></div>
-					<div id="experience__data1" class="experience__text1"></div>
-					<div id="experience__data2" class="experience__text2"></div>
-					<div class="experience__background2"></div>
-				</div>
-			</div>
-		</section>
-		<section class="education">
-			<div class="container">
-				<div class="education__wrapper">
-					<div class="education__background1"></div>
-					<div id="education__data" class="education__text"></div>
-					<div class="education__background2"></div>
-				</div>
-			</div>
-		</section>
-		<section class="skills">
-			<div class="container">
-				<div class="skills__wrapper">
-					<div class="skills__background1"></div>
-					<div class="skills__title1">
-						<h2>technical</h2>
-						<div id="skills__data1" class="skills__text1"></div>
+					<div class="about__text1">
+						<p>
+							I am a driven professional with a background in architecture and project management, transitioning to web development. Since completing my Full Stack Web Development Course at FLAG, I
+							have been fascinated by the possibilities in web development and am highly motivated to begin my career in this field. I am confident in my ability to learn quickly and grow into a web
+							development role.
+						</p>
 					</div>
-					<div class="skills__title2">
-						<h2>professional</h2>
-						<div id="skills__data2" class="skills__text2"></div>
+					<div class="about__text2">
+						<p>
+							During my internship at Javali Open Source System, I reinforced my skills in PHP and learned to work with Twig and YAML, as well as Drupal CMS, gaining hands-on experience withreal-world
+							web development projects.
+							<br />
+							My professional background in architecture and project management has equipped me with transferable skills such as problem-solving, client communication, and project management. I
+							believe these qualities will allow me to contribute effectively to your team while continuing to develop my technical expertise.
+						</p>
 					</div>
-					<div class="skills__background2"></div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
+		<script src="/scripts/hero.js" defer></script>
 	</body>
 </html>
+
+<!-- <div class="hero__data">
+								<p><span class="hero__bold">Phone: </span>(+351) 914 541 698</p>
+								<p><span class="hero__bold">Email: </span>ellenristow@gmail.com</p>
+								<p><span class="hero__bold">Adress: </span>Almada, Portugal</p>
+				</div> -->

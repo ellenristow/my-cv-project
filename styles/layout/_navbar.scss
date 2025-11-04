@@ -7,11 +7,9 @@
 	width: 100%;
 	z-index: 5;
 	top: 0;
-	/* left: 0; */
 	color: $text-dark-color;
-	height: 7rem;
-	/* background: antiquewhite; */
-	/* align-items: center; */
+	height: 8rem;
+	/* border: 1px solid coral; */
 
 	&__wrapper {
 		display: flex;
@@ -20,6 +18,8 @@
 		align-items: center;
 		font-family: $secondary-font;
 		margin-top: 0.85rem;
+		background-color: $bg-secondary-color;
+		border: 1px solid darkblue;
 	}
 
 	&__left-header h1 {
@@ -34,6 +34,7 @@
 		flex-wrap: wrap;
 		width: 100px;
 		line-height: 1.2;
+		border: 1px solid black;
 	}
 
 	&__left-header h1:hover {
@@ -44,6 +45,7 @@
 	&_right-header {
 		display: flex;
 		flex-direction: row;
+		border: 1px solid black;
 	}
 
 	.nav__menu {

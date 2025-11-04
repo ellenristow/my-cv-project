@@ -3,32 +3,29 @@
 @use '../core/' as *;
 
 .about {
-	margin-top: 7rem;
+	margin-top: -15rem;
 
 	&__wrapper {
 		font-family: $main-font;
 		color: $text-dark-color;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(3, 200px);
 		position: relative;
-	}
-
-	&__background1 {
-		grid-column: 2/5;
-		grid-row: 1/4;
-		background: $tertiary-color;
-		z-index: -3;
-		margin-bottom: 3.5rem;
+		background-color: $fifth-color;
 	}
 
 	&__title {
 		display: flex;
 		justify-content: flex-end;
-		grid-column: 4/5;
-		grid-row: 1/3;
 		padding: 3rem 4rem 0 0;
 		font-size: $h4-font-size;
+	}
+
+	&__image {
+		img {
+			width: 230px;
+			height: auto;
+			object-fit: cover;
+			border-radius: 50%;
+		}
 	}
 
 	&__text1,
@@ -48,13 +45,5 @@
 		grid-column: 2/5;
 		grid-row: 2/4;
 		padding-top: 9rem;
-	}
-
-	&__background2 {
-		grid-column: 1/4;
-		grid-row: 1/4;
-		margin-top: 7rem;
-		background: $bg-secondary-color;
-		z-index: -5;
 	}
 }

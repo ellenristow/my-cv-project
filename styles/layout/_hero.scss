@@ -1,0 +1,87 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../core/' as *;
+
+.hero {
+	font-family: $main-font;
+	position: relative;
+	overflow: hidden;
+	background: $bg-primary-color;
+	/* margin-top: 8rem; */
+
+	&__cursor {
+		position: fixed;
+		background: $bg-secondary-color;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		will-change: transform;
+		user-select: none;
+		pointer-events: none;
+		z-index: 10000;
+		transform-origin: center;
+	}
+
+	&__shapes {
+		position: relative;
+		height: 500px;
+		width: 100vw;
+		background: $bg-secondary-color;
+		overflow: hidden;
+
+		.shape {
+			will-change: transform;
+			position: absolute;
+			border-radius: 50%;
+			transform-origin: center center;
+		}
+
+		.shape-1 {
+			background: $sixth-color;
+			width: 650px;
+			height: 650px;
+			margin-top: -325px;
+			margin-left: -325px;
+		}
+
+		.shape-2 {
+			background: $fifth-color;
+			width: 440px;
+			height: 440px;
+			margin-top: -220px;
+			margin-left: -220px;
+		}
+
+		.shape-3 {
+			background: $fourth-color;
+			width: 270px;
+			height: 270px;
+			margin-top: -135px;
+			margin-left: -135px;
+		}
+	}
+	.hero__text {
+		top: 0;
+		left: 0;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100vw;
+		background: #fff;
+		mix-blend-mode: screen;
+
+		h1 {
+			font-size: clamp(100px, 11vw, 200px);
+			color: #000;
+			margin: 0;
+			text-align: center;
+		}
+	}
+}
+
+::selection {
+	color: #fff;
+	background: $bg-secondary-color;
+}
