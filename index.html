@@ -8,9 +8,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 	</head>
 	<body>
-		<header>
-			<nav class="nav">
-				<div class="container">
+		<div class="container">
+			<header>
+				<nav class="nav">
 					<div class="nav__wrapper">
 						<div class="nav__left-header">
 							<ul class="nav__menu">
@@ -18,7 +18,7 @@
 									<a href="#">about</a>
 								</li>
 								<li class="nav__menu-item">
-									<a href="/pages/teste.html">skills</a>
+									<a href="#">skills</a>
 								</li>
 								<li class="nav__menu-item">
 									<a href="#">contact</a>
@@ -28,21 +28,26 @@
 						<div class="nav__right-header">
 							<ul class="nav__menu">
 								<li class="nav__menu-item">
-									<a href="#">linkedin</a>
+									<a href="https://www.linkedin.com/in/ellenristow/" target="_blank">
+										<img src="/images/linkedin-icon.svg" alt="LinkedIn" />
+									</a>
 								</li>
 								<li class="nav__menu-item">
-									<a href="#">github</a>
+									<a href="https://github.com/ellenristow" target="_blank">
+										<img src="/images/github-icon.svg" alt="GitHub" />
+									</a>
 								</li>
 								<li class="nav__menu-item">
-									<a href="/assets/cv_ellen-ristow.pdf">resume</a>
+									<a href="/assets/cv_ellen-ristow.pdf" target="_blank">
+										<img src="/images/download-icon.svg" alt="GitHub" />
+									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
-			</nav>
-		</header>
-		<div class="container">
+					<hr class="nav__divider" />
+				</nav>
+			</header>
 			<section class="hero">
 				<div class="hero__cursor"></div>
 				<div class="hero__shapes">
@@ -51,6 +56,7 @@
 					<div class="shape shape-3"></div>
 				</div>
 				<div class="hero__text">
+					<!-- <h5>I am</h5> -->
 					<h1>Ellen Ristow</h1>
 				</div>
 			</section>
@@ -73,20 +79,38 @@
 						<p>
 							During my internship at Javali Open Source System, I reinforced my skills in PHP and learned to work with Twig and YAML, as well as Drupal CMS, gaining hands-on experience withreal-world
 							web development projects.
-							<br />
-							My professional background in architecture and project management has equipped me with transferable skills such as problem-solving, client communication, and project management. I
-							believe these qualities will allow me to contribute effectively to your team while continuing to develop my technical expertise.
 						</p>
+						<div class="about__text3">
+							<p>
+								My professional background in architecture and project management has equipped me with transferable skills such as problem-solving, client communication, and project management. I
+								believe these qualities will allow me to contribute effectively to your team while continuing to develop my technical expertise.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
+			<section class="skills">
+				<div class="skills__wrapper"></div>
+			</section>
+			<section class="contact">
+				<div class="contact__wrapper">
+					<div class="contact_info">
+						<div class="contact__data">
+							<p><span class="contact__bold">Phone: </span>(+351) 914 541 698</p>
+							<p><span class="contact__bold">Email: </span>ellenristow@gmail.com</p>
+							<p><span class="contact__bold">Adress: </span>Almada, Portugal</p>
+						</div>
+					</div>
+					<div class="contact__form">
+						<input type="text" />
+						<input type="message" />
+					</div>
+				</div>
+			</section>
+			<script src="/scripts/hero.js" defer></script>
+			<script src="/scripts/navbar.js" defer></script>
 		</div>
-		<script src="/scripts/hero.js" defer></script>
 	</body>
 </html>
 
-<!-- <div class="hero__data">
-								<p><span class="hero__bold">Phone: </span>(+351) 914 541 698</p>
-								<p><span class="hero__bold">Email: </span>ellenristow@gmail.com</p>
-								<p><span class="hero__bold">Adress: </span>Almada, Portugal</p>
-				</div> -->
+<!--  -->

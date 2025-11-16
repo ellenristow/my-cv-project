@@ -7,64 +7,96 @@
 	width: 100%;
 	z-index: 5;
 	top: 0;
-	color: $text-dark-color;
-	height: 8rem;
-	/* border: 1px solid coral; */
+	left: 0;
+	color: $tertiary-color;
+	font-family: $secondary-font;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: $p-font-size;
+	transition: all 1s ease-in-out;
 
 	&__wrapper {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		font-family: $secondary-font;
-		margin-top: 0.85rem;
-		background-color: $bg-secondary-color;
-		border: 1px solid darkblue;
+		padding: 3rem 4rem;
+		transition: all 1s ease-in-out;
 	}
 
-	&__left-header h1 {
-		font-size: $h3-font-size;
-		font-weight: 100;
-		line-height: 1;
-		margin-top: 0.25rem;
+	&__left-header,
+	&__right-header {
 		text-decoration: none;
-		text-decoration: none;
-		color: $text-dark-color;
-		display: flex;
-		flex-wrap: wrap;
-		width: 100px;
-		line-height: 1.2;
-		border: 1px solid black;
-	}
-
-	&__left-header h1:hover {
-		cursor: pointer;
-		color: $tertiary-color;
-	}
-
-	&_right-header {
+		color: inherit;
 		display: flex;
 		flex-direction: row;
-		border: 1px solid black;
+		transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 	}
 
-	.nav__menu {
+	&__left-header &__menu {
 		display: flex;
-		gap: 1rem;
-		font-size: $p-font-size;
+		gap: 2rem;
 
-		a {
-			text-decoration: none;
-			color: inherit;
+		.nav__menu-item {
+			a {
+				text-decoration: none;
+				color: inherit;
+				border: 1px solid $tertiary-color;
+				padding: 0.5rem 1rem;
+				border-radius: 50px;
+				box-shadow: 4px 4px 0 $tertiary-color;
+				display: inline-block;
+
+				&:hover {
+					transform: translateY(-3px);
+				}
+			}
+
+			&:nth-child(1) a {
+				background-color: $bg-secondary-color;
+			}
+
+			&:nth-child(2) a {
+				background-color: $fifth-color;
+			}
+
+			&:nth-child(3) a {
+				background-color: $fourth-color;
+			}
 		}
 	}
 
-	.nav__menu-item:hover {
-		cursor: pointer;
-		color: $tertiary-color;
-	}
-}
+	&__right-header &__menu {
+		display: flex;
+		gap: 2rem;
 
-.navbar-background {
-	background: #fff;
+		.nav__menu-item {
+			a {
+				/* color: inherit; */
+				border: 1px solid $tertiary-color;
+				border-radius: 50px;
+				box-shadow: 4px 4px 0 $tertiary-color;
+				display: inline-block;
+
+				&:hover {
+					transform: translateY(-3px);
+				}
+			}
+		}
+	}
+
+	&__divider {
+		border: none;
+		border-bottom: 0.5px solid $tertiary-color;
+		width: 100%;
+		transition: all 1s ease-in-out;
+	}
+
+	&.navbar-background {
+		.nav__wrapper {
+			background-color: rgba($sixth-color, 0.7);
+			backdrop-filter: blur(6px);
+			padding: 1.5rem 4rem;
+		}
+	}
 }
