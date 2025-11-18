@@ -1,0 +1,52 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../core/' as *;
+
+.contact {
+	margin: 6rem 0;
+	background-color: $fourth-color;
+	height: 600px;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 1fr;
+	}
+
+	&__title {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: $main-font;
+		font-size: $h4-font-size;
+		margin-bottom: 3rem;
+	}
+
+	&__form {
+		grid-column: 2/3;
+		grid-row: 1/2;
+		display: flex;
+		flex-direction: column;
+		font-family: $secondary-font;
+
+		.form {
+			background: $sixth-color;
+			border: 1px solid $tertiary-color;
+			border-radius: 50px;
+			box-shadow: 4px 4px 0 $tertiary-color;
+			padding: 0.5rem 1rem;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			padding: 4rem;
+
+			.btn {
+				font-family: $secondary-font;
+				font-size: $p-font-size;
+				background: $bg-secondary-color;
+			}
+		}
+	}
+}

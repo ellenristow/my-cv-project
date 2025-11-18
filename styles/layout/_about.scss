@@ -4,65 +4,53 @@
 
 .about {
 	background-color: $fifth-color;
-	border-radius: 2.5rem;
+	border-radius: 2rem;
 	/* height: 750px; */
 
 	&__wrapper {
 		font-family: $secondary-font;
 		color: $text-dark-color;
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		grid-template-rows: repeat(3, 1fr);
-	}
-
-	&__title {
-		grid-column: 1/2;
-		grid-row: 1/2;
-		font-family: $main-font;
-		font-size: $h4-font-size;
 		display: flex;
-		justify-content: center;
+		padding: 4rem;
+		gap: 2.5rem;
 		align-items: center;
 	}
 
-	&__image {
-		grid-column: 1/2;
-		grid-row: 2/3;
+	&__left {
+		min-width: 350px;
+		height: auto;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		gap: 3rem;
 
-		img {
-			width: 230px;
-			height: auto;
-			object-fit: cover;
-			border-radius: 50%;
-			border: 1px solid $tertiary-color;
-			box-shadow: 8px 8px 0 $tertiary-color;
+		&__title {
+			font-family: $main-font;
+			font-size: $h3-font-size;
+			color: $text-dark-color;
+		}
+
+		&__image {
+			display: flex;
+			img {
+				width: 280px;
+				height: auto;
+				object-fit: cover;
+				border-radius: 50%;
+				border: 1px solid $tertiary-color;
+				box-shadow: 8px 8px 0 $tertiary-color;
+			}
 		}
 	}
 
-	&__text1,
-	&__text2,
-	&__text3 {
-		text-align: right;
-		font-size: $h6-font-size;
-		line-height: 1.5;
-		padding: 0 4rem;
-		grid-column: 2/3;
+	&__right {
+		&__text {
+			text-align: justify;
+			font-size: $h6-font-size;
+			line-height: 1.5;
+			padding: 0 4rem;
+			display: flex;
+			flex-direction: column;
+		}
 	}
-
-	&__text1 {
-		grid-row: 1/2;
-		display: flex;
-		align-items: center;
-	}
-
-	&__text2 {
-		grid-row: 2/3;
-	}
-
-	&__text3 {
-		grid-row: 3/4;
-	}
-} /*  */
+}

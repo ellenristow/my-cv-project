@@ -15,13 +15,13 @@
 						<div class="nav__left-header">
 							<ul class="nav__menu">
 								<li class="nav__menu-item">
-									<a href="#">about</a>
+									<a href="#about">about</a>
 								</li>
 								<li class="nav__menu-item">
-									<a href="#">skills</a>
+									<a href="#skills">skills</a>
 								</li>
 								<li class="nav__menu-item">
-									<a href="#">contact</a>
+									<a href="#contact">contact</a>
 								</li>
 							</ul>
 						</div>
@@ -60,50 +60,79 @@
 					<h1>Ellen Ristow</h1>
 				</div>
 			</section>
-			<section class="about">
+			<section id="about" class="about">
 				<div class="about__wrapper">
-					<div class="about__title">
-						<h2>About Me</h2>
+					<div class="about__left">
+						<div class="about__left__title">
+							<h2>About Me</h2>
+						</div>
+						<div class="about__left__image">
+							<img class="img-fluid" src="/images/ellenristow.JPG" alt="self-portrait" />
+						</div>
 					</div>
-					<div class="about__image">
-						<img class="img-fluid" src="/images/ellenristow.JPG" alt="self-portrait" />
-					</div>
-					<div class="about__text1">
-						<p>
-							I am a driven professional with a background in architecture and project management, transitioning to web development. Since completing my Full Stack Web Development Course at FLAG, I
-							have been fascinated by the possibilities in web development and am highly motivated to begin my career in this field. I am confident in my ability to learn quickly and grow into a web
-							development role.
-						</p>
-					</div>
-					<div class="about__text2">
-						<p>
-							During my internship at Javali Open Source System, I reinforced my skills in PHP and learned to work with Twig and YAML, as well as Drupal CMS, gaining hands-on experience withreal-world
-							web development projects.
-						</p>
-						<div class="about__text3">
+					<div class="about__right">
+						<div class="about__right__text">
 							<p>
-								My professional background in architecture and project management has equipped me with transferable skills such as problem-solving, client communication, and project management. I
-								believe these qualities will allow me to contribute effectively to your team while continuing to develop my technical expertise.
+								I am a driven professional with a background in architecture and project management, transitioning to web development. Since completing my Full Stack Web Development Course at FLAG, I
+								have been fascinated by the possibilities in web development and am highly motivated to begin my career in this field.
 							</p>
+							<br />
+							<p>
+								During my internship at Javali Open Source System in 2025, I reinforced my skills in PHP and learned to work with Twig and YAML, as well as Drupal CMS, gaining hands-on experience
+								withreal-world web development projects.
+							</p>
+							<br />
+							<p>My professional background in architecture and project management has equipped me with transferable skills such as problem-solving, client communication, and project management.</p>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="skills">
-				<div class="skills__wrapper"></div>
+			<section id="skills" class="skills">
+				<div class="skills__wrapper">
+					<div class="skills__title">
+						<h2>Skills</h2>
+					</div>
+					<div class="skills__items">
+						<ul>
+							<li class="skills__items__icon">
+								<img src="/images/html5-icon.svg" alt="HTML" />
+							</li>
+							<li class="skills__items__icon">
+								<img src="/images/css-icon.svg" alt="CSS" />
+							</li>
+							<li class="skills__items__icon">
+								<img src="/images/js-icon.svg" alt="JavaScript" />
+							</li>
+							<li class="skills__items__icon">
+								<img src="/images/react-icon.svg" alt="React" />
+							</li>
+							<li class="skills__items__icon">
+								<img src="/images/php-icon.svg" alt="PHP" />
+							</li>
+							<li class="skills__items__icon">
+								<img src="/images/drupal-icon.svg" alt="Drupal" />
+							</li>
+						</ul>
+					</div>
+				</div>
 			</section>
-			<section class="contact">
+			<section id="contact" class="contact">
 				<div class="contact__wrapper">
-					<div class="contact_info">
-						<div class="contact__data">
-							<p><span class="contact__bold">Phone: </span>(+351) 914 541 698</p>
-							<p><span class="contact__bold">Email: </span>ellenristow@gmail.com</p>
-							<p><span class="contact__bold">Adress: </span>Almada, Portugal</p>
-						</div>
+					<div class="contact__title">
+						<h2>Contact Me</h2>
 					</div>
 					<div class="contact__form">
-						<input type="text" />
-						<input type="message" />
+						<form id="contact-form" action="">
+							<div class="form">
+								<label for="name">Name</label>
+								<input type="text" id="name" name="name" required />
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" required />
+								<label for="message">Message</label>
+								<input type="message" id="message" name="message" size="80" required />
+								<button class="btn" type="submit">Send</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -112,5 +141,3 @@
 		</div>
 	</body>
 </html>
-
-<!--  -->
