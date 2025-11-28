@@ -56,10 +56,14 @@
 					<div class="shape shape-3"></div>
 				</div>
 				<div class="hero__text">
-					<!-- <h5>I am</h5> -->
 					<h1>Ellen Ristow</h1>
 				</div>
 			</section>
+			<div>
+				<aside id="back-top-button" class="back-top">
+					<img src="/images/back-top-icon.svg" alt="back-to-top" />
+				</aside>
+			</div>
 			<section id="about" class="about">
 				<div class="about__wrapper">
 					<div class="about__left">
@@ -67,7 +71,7 @@
 							<h2>About Me</h2>
 						</div>
 						<div class="about__left__image">
-							<img class="img-fluid" src="/images/ellenristow.JPG" alt="self-portrait" />
+							<img class="img-fluid" src="/images/images/ellenristow.JPG" alt="self-portrait" />
 						</div>
 					</div>
 					<div class="about__right">
@@ -118,26 +122,33 @@
 			</section>
 			<section id="contact" class="contact">
 				<div class="contact__wrapper">
-					<div class="contact__title">
-						<h2>Contact Me</h2>
+					<div class="contact__left">
+						<div class="contact__left__title">
+							<h2>Contact Me</h2>
+						</div>
 					</div>
-					<div class="contact__form">
-						<form id="contact-form" action="">
-							<div class="form">
-								<label for="name">Name</label>
-								<input type="text" id="name" name="name" required />
-								<label for="email">Email</label>
-								<input type="email" id="email" name="email" required />
-								<label for="message">Message</label>
-								<input type="message" id="message" name="message" size="80" required />
-								<button class="btn" type="submit">Send</button>
-							</div>
-						</form>
+					<div class="contact__right">
+						<div class="contact__right__form">
+							<form id="contact-form" action="">
+								<div class="form">
+									<label for="name">Name</label>
+									<input type="text" id="name" name="name" required />
+									<label for="email">Email</label>
+									<input type="email" id="email" name="email" required />
+									<label for="message">Message</label>
+									<textarea type="message" id="message" name="message" size="80" required></textarea>
+									<div class="form-btn">
+										<button class="btn" type="submit">Send</button>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</section>
 			<script src="/scripts/hero.js" defer></script>
 			<script src="/scripts/navbar.js" defer></script>
+			<script src="/scripts/back-top.js" defer></script>
 		</div>
 	</body>
 </html>

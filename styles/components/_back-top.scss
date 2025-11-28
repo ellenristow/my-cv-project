@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+@use '../core/' as *;
+
+.back-top {
+	right: 8rem;
+	bottom: 3rem;
+	position: fixed;
+	cursor: pointer;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease-in-out;
+	z-index: 99;
+}
+
+.back-top-visible {
+	opacity: 1;
+	pointer-events: all;
+}
