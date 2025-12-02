@@ -3,36 +3,43 @@
 @use '../core/' as *;
 
 .skills {
-	margin: 6rem 0;
+	margin-top: 6rem;
+	scroll-margin-top: 100px;
+	height: 600px;
+	/* background: $fourth-color; */
 
 	&__wrapper {
 		display: flex;
+		flex-direction: column;
+		padding: 4rem;
 	}
 
 	&__title {
+		display: flex;
 		justify-content: center;
-		align-items: center;
 		font-family: $main-font;
-		font-size: $h3-font-size;
-		margin-bottom: 3rem;
+		font-size: $h2-font-size;
+		margin-bottom: 10rem;
 	}
 
-	&__items {
+	&__items ul {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-evenly;
 		gap: 3rem;
+	}
 
-		&__icon {
-			img {
-				width: 130px;
-			}
+	li {
+		img {
+			width: 100px;
+			transition: all 0.5s;
+			opacity: 0.75;
+		}
 
-			img:hover {
-				width: 150px;
-			}
+		img:hover {
+			width: 130px;
+			opacity: 1;
 		}
 	}
 }

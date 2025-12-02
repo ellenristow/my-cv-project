@@ -124,19 +124,25 @@
 				<div class="contact__wrapper">
 					<div class="contact__left">
 						<div class="contact__left__title">
-							<h2>Contact Me</h2>
+							<div class="title__main">
+								<h2>Contact Me</h2>
+							</div>
+							<div class="title__secondary">
+								<h4>Open to</h4>
+								<h3>work!</h3>
+							</div>
 						</div>
 					</div>
 					<div class="contact__right">
 						<div class="contact__right__form">
-							<form id="contact-form" action="">
+							<form id="contact-form" action="/email.php" method="post">
 								<div class="form">
 									<label for="name">Name</label>
-									<input type="text" id="name" name="name" required />
+									<input class="form__field" type="text" id="name" name="name" required />
 									<label for="email">Email</label>
-									<input type="email" id="email" name="email" required />
+									<input class="form__field" type="email" id="email" name="email" required />
 									<label for="message">Message</label>
-									<textarea type="message" id="message" name="message" size="80" required></textarea>
+									<textarea class="form__field" type="message" id="message" name="message" size="80" required></textarea>
 									<div class="form-btn">
 										<button class="btn" type="submit">Send</button>
 									</div>

@@ -54,6 +54,23 @@ button:hover {
   transform: translateY(-3px);
 }
 
+.back-top {
+  right: 8rem;
+  bottom: 3rem;
+  position: fixed;
+  cursor: pointer;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.back-top-visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -229,7 +246,7 @@ button:hover {
 .about {
   background-color: #c87dcc;
   border-radius: 2rem;
-  /* height: 750px; */
+  scroll-margin-top: 100px;
 }
 .about__wrapper {
   font-family: "Ubuntu", sans-serif;
@@ -274,73 +291,112 @@ button:hover {
 }
 
 .skills {
-  margin: 6rem 0;
+  margin-top: 6rem;
+  scroll-margin-top: 100px;
+  height: 600px;
+  /* background: $fourth-color; */
 }
 .skills__wrapper {
   display: flex;
+  flex-direction: column;
+  padding: 4rem;
 }
 .skills__title {
-  justify-content: center;
-  align-items: center;
-  font-family: "Bevan", serif;
-  font-size: 2.074rem;
-  margin-bottom: 3rem;
-}
-.skills__items {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Bevan", serif;
+  font-size: 2.488rem;
+  margin-bottom: 10rem;
+}
+.skills__items ul {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 3rem;
 }
-.skills__items__icon img {
-  width: 130px;
+.skills li img {
+  width: 100px;
+  transition: all 0.5s;
+  opacity: 0.75;
 }
-.skills__items__icon img:hover {
-  width: 150px;
+.skills li img:hover {
+  width: 130px;
+  opacity: 1;
 }
 
 .contact {
   margin: 6rem 0;
   background-color: #fa9e9b;
+  scroll-margin-top: 100px;
   height: 600px;
 }
 .contact__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-}
-.contact__title {
-  grid-column: 1/2;
-  grid-row: 1/2;
+  font-family: "Ubuntu", sans-serif;
+  color: #131313;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Bevan", serif;
-  font-size: 1.728rem;
-  margin-bottom: 3rem;
+  /* padding: 4rem;
+  align-items: center; */
 }
-.contact__form {
-  grid-column: 2/3;
-  grid-row: 1/2;
+.contact__left {
+  min-width: 350px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  /* gap: 3rem; */
+}
+.contact__left__title {
   display: flex;
   flex-direction: column;
-  font-family: "Ubuntu", sans-serif;
+  align-items: center;
+  font-family: "Bevan", serif;
 }
-.contact__form .form {
+.contact__left__title h2 {
+  font-size: 2.488rem;
+}
+.contact__left__title h3 {
+  font-size: 2.074rem;
+  text-transform: uppercase;
+}
+.contact__left__title h4 {
+  font-size: 1.728rem;
+}
+.contact__right {
+  flex: 2;
+  display: flex;
+  justify-content: end;
+}
+.contact__right__form {
+  width: 100%;
+}
+.contact__right__form .form {
   background: #546ed8;
   border: 1px solid #0a10b3;
   border-radius: 50px;
   box-shadow: 4px 4px 0 #0a10b3;
-  padding: 0.5rem 1rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 4rem;
+  padding: 8rem 6rem;
 }
-.contact__form .form .btn {
+.contact__right__form .form__field {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #0a10b3;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+.contact__right__form .form textarea {
+  height: 10rem;
+  padding: 0.25rem;
+}
+.contact__right__form .btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   background: #f8c269;
+  margin-top: 2rem;
 }
